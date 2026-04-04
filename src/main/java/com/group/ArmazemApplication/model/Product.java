@@ -1,8 +1,13 @@
-import java.util.UUID;
+package com.group.ArmazemApplication.model;
 
+import jakarta.persistence.*;
+
+@Entity
 public class Product {
 
-    private UUID id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    private Long id;
     private String nameProduct;
     private String description;
     private String category;
@@ -12,8 +17,10 @@ public class Product {
     private String urlImage;
 
     /// construct
-    public Product(String nameProduct, String description, String category, double salePrice, double costPrice, int quantity, String urlImage) {
-        this.id = UUID.randomUUID();
+    public Product(){};
+    /// construct
+    public Product(Long id, String nameProduct, String description, String category, double salePrice, double costPrice, int quantity, String urlImage) {
+        this.id = id;
         this.nameProduct = nameProduct;
         this.description = description;
         this.category = category;
@@ -24,7 +31,7 @@ public class Product {
     }
 
     /// getters
-    public UUID getId() {
+    public Long getId() {
         return id;
     }
 
@@ -57,7 +64,6 @@ public class Product {
     }
 
     public void printProduct() {
-
         System.out.printf("""
                 %s
                 Produto: %s
@@ -70,6 +76,7 @@ public class Product {
     }
 
     /// setters
+
     public void setNameProduct(String newNameProcuct) {
         this.nameProduct = newNameProcuct;
     }
@@ -111,5 +118,6 @@ public class Product {
     public void setIncreaseQuantity(int newQuantity) {
         this.quantity += newQuantity;
     }
+
 
 }
