@@ -76,7 +76,58 @@ Sempre que ocorre uma entrada ou saída de mercadorias, o estoque é atualizado 
 
 ## 🛠 Tecnologias Utilizadas
 
+### 💻 Linguagens
 - Java 21
+- Dart
+- SQL
+
+### 🚀 Frameworks e Ferramentas
+- Flutter
+- Supabase
+
+### 📦 Gerenciamento de Estado
+- Provider
+
+### 🗄️ Banco de Dados
+- PostgreSQL (via Supabase Database)
+
+### ☁️ Backend as a Service (BaaS)
+- Supabase Auth
+- Supabase Database
+- Supabase Storage
+- Supabase Realtime
+
+### 🏗️ Arquitetura
+- MVVM (Model-View-ViewModel)
+
+### 🔄 Controle de Versão
+- Git
+- GitHub
+
+### 🔐 Autenticação e Segurança
+- Login e Cadastro com Supabase Auth
+- Autenticação Biométrica (`local_auth`)
+- Controle de Sessão
+- Persistência de Autenticação
+
+### 📱 Desenvolvimento Mobile
+- Android
+- Interface Responsiva
+- Navegação entre Telas
+
+### ✅ Formulários e Validações
+- Validação de CPF
+- Validação de CNPJ
+- Validação de CEP
+- Validação de E-mail
+- Máscaras de Entrada
+
+### 📚 Principais Bibliotecas Flutter
+- `provider`
+- `supabase_flutter`
+- `local_auth`
+- `mask_text_input_formatter`
+- `intl`
 
 ---
 
@@ -100,7 +151,3 @@ Sempre que ocorre uma entrada ou saída de mercadorias, o estoque é atualizado 
 **Disciplina:** Engenharia de Software
 
 ---
-
-## 📄 Licença
-
-Projeto desenvolvido exclusivamente para fins acadêmicos.
