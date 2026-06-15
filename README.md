@@ -1,24 +1,24 @@
-# Sistema de Gerenciamento de Armazenamento Logístico Móvel - Backend
+# Sistema de Gerenciamento de Armazenamento Logístico
 
 ## 📖 Sobre o Projeto
 
 Este projeto corresponde ao backend do Sistema de Gerenciamento de Armazenamento Logístico Móvel, desenvolvido como atividade da disciplina de Engenharia de Software da Universidade Federal Rural do Semi-Árido (UFERSA).
 
-O sistema foi criado para auxiliar pequenos e médios armazéns no controle de estoque, substituindo registros manuais em papel por uma solução digital mais segura, rápida e organizada. A aplicação permite gerenciar produtos, clientes, vendas e movimentações de estoque, garantindo maior confiabilidade das informações e melhor eficiência operacional.
+---
+
+## 🎯 Objetivo do Sistema
+
+O Sistema de Gerenciamento de Armazenamento Logístico Móvel tem como objetivo auxiliar pequenos e médios armazéns no controle e gerenciamento de estoque por meio de uma solução digital integrada. O sistema busca substituir processos manuais baseados em papel, proporcionando maior agilidade, segurança e confiabilidade no armazenamento e consulta das informações.
+
+Além do controle de produtos, a aplicação permite o gerenciamento de clientes, vendas e movimentações de estoque, contribuindo para uma administração mais eficiente das operações logísticas e para a tomada de decisões baseada em dados atualizados em tempo real.
 
 ---
 
-## 🎯 Por que o projeto foi desenvolvido?
+## ⚠️ Descrição do Problema
 
-Durante o levantamento de requisitos, foi identificado que o controle manual do estoque gerava diversos problemas operacionais, tais como:
+Muitos pequenos e médios armazéns ainda realizam o controle de estoque de forma manual, utilizando anotações em papel ou planilhas pouco estruturadas. Esse processo pode gerar diversos problemas operacionais, como perda de registros, inconsistências entre o estoque físico e o estoque registrado, demora na conferência de mercadorias e dificuldades no acompanhamento das entradas e saídas de produtos.
 
-- Perda ou extravio de registros em papel;
-- Divergência entre estoque físico e estoque registrado;
-- Lentidão na conferência de mercadorias;
-- Dificuldade no acompanhamento de entradas e saídas;
-- Risco de erros humanos durante as operações.
-
-Para solucionar esses problemas, foi proposta uma aplicação capaz de centralizar e automatizar o gerenciamento do armazém, fornecendo informações atualizadas em tempo real.
+Além disso, a dependência de processos manuais aumenta a probabilidade de erros humanos, comprometendo a confiabilidade das informações e dificultando a gestão eficiente do negócio. Diante desse cenário, surgiu a necessidade de desenvolver uma solução informatizada capaz de centralizar, automatizar e organizar as informações do armazém, reduzindo falhas operacionais e melhorando o controle logístico.
 
 ---
 
@@ -131,6 +131,76 @@ Sempre que ocorre uma entrada ou saída de mercadorias, o estoque é atualizado 
 
 ---
 
+## 📂 Estrutura do Projeto
+
+O backend foi desenvolvido utilizando Java e Spring Boot, seguindo uma arquitetura em camadas para promover organização, manutenção e escalabilidade do sistema.
+
+```text
+ProjetoDeArmazenamentoLogistico/
+├── src/
+│   ├── main/
+│   │   ├── java/com/group/ArmazemApplication/
+│   │   │   ├── controller/
+│   │   │   ├── model/
+│   │   │   ├── repository/
+│   │   │   ├── service/
+│   │   │   └── ArmazemApplication.java
+│   │   └── resources/
+│   └── test/
+├── .mvn/
+│   └── wrapper/
+├── .idea/
+├── out/
+├── pom.xml
+├── mvnw
+├── mvnw.cmd
+└── README.md
+```
+---
+
+## ▶️ Instruções de Execução
+
+### Pré-requisitos
+
+- Java 21 ou superior
+- Maven
+- Git
+
+### Clonar o Repositório
+
+```bash
+git clone https://github.com/DaviFreita/ProjetodeArmazenamentoLogistico.git
+```
+
+### Acessar a Pasta do Projeto
+
+```bash
+cd ProjetodeArmazenamentoLogistico
+```
+
+### Executar a Aplicação
+
+Linux/Mac:
+
+```bash
+./mvnw spring-boot:run
+```
+
+Windows:
+
+```bash
+mvnw.cmd spring-boot:run
+```
+---
+
+## 🎨 Link do Protótipo
+
+Protótipo disponível no Figma:
+
+https://www.figma.com/design/Fqm6snmQq3kKHZqKHD32Up/Sem-t%C3%ADtulo?node-id=0-1&t=nEhTsZnB4IvxOPzZ-1
+
+---
+
 ## 👥 Equipe de Desenvolvimento
 
 | Foto | Integrante | GitHub |
@@ -139,6 +209,14 @@ Sempre que ocorre uma entrada ou saída de mercadorias, o estoque é atualizado 
 | <img src="https://github.com/alissonricarte.png" width="100"> | Alisson Lima Ricarte | [@alissonricarte](https://github.com/alissonricarte) |
 | <img src="https://github.com/DaviFreita.png" width="100"> | Davi da Silva Freitas | [@DaviFreita](https://github.com/DaviFreita) |
 | <img src="https://github.com/Juanpablouf.png" width="100"> | Juan Pablo Silva Valdivino | [@Juanpablouf](https://github.com/Juanpablouf) |
+
+---
+
+## 📌 Status Atual do Desenvolvimento
+
+🚧 Em desenvolvimento
+
+O sistema encontra-se em desenvolvimento e aprimoramento contínuo pela equipe do projeto.
 
 ---
 
